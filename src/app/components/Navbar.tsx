@@ -25,23 +25,23 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="bg-white top-0 z-50 px-6 py-2 font-medium text-[#121212]">
+        <nav className="bg-white sticky top-0 z-50 px-6 py-2 font-medium text-[#121212]">
             <div className="container mx-auto py-2 flex justify-between items-center">
-                <div className="justify-start p-4 ml-1 flex items-center">
+                <div className="justify-start px-4 py-1 ml-1 flex items-center">
                     <Link href="/">
                         <Image
                             src="/logo.png"
                             alt="Logo"
-                            width={100}
-                            height={100}
+                            width={120}
+                            height={80}
                             className="cursor-pointer"
                         />
                     </Link>
                 </div>
 
-                <div className="flex justify-end">
+                <div className="flex justify-end items-center py-2">
                     <button onClick={handleMenuToggle} aria-label="Toggle Menu">
-                        {menuOpen ? <CgClose size={30} /> : <HiOutlineMenuAlt3 size={30} />}
+                        {menuOpen ? <CgClose size={30} className="text-[#4831D4]"/> : <HiOutlineMenuAlt3 size={30} className="text-[#4831D4]" />}
                     </button>
                 </div>
             </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
                     onClick={handleMenuToggle}
                     aria-label="Close Menu"
                 >
-                    <CgClose size={30} />
+                    <CgClose size={30} className="text-[#4831D4]"/>
                 </button>
 
                 <div className="flex flex-col space-y-6 mt-16">
@@ -63,7 +63,7 @@ export default function Navbar() {
                         <Link
                             key={link.text}
                             href={link.href}
-                            className={`hover:text-[#000EEE] hover:underline transition-opacity duration-500 ${menuOpen
+                            className={`hover:text-[#121212] hover:underline transition-opacity duration-500 text-[#4831D4] ${menuOpen
                                     ? `opacity-100 delay-${index * 200}`
                                     : "opacity-0 delay-0"
                                 }`}

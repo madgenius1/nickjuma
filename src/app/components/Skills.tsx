@@ -1,14 +1,21 @@
 
+import Link from "next/link";
+
 
 export default function Skills() {
   return (
-    <div id="skills" className="h-screen bg-gray-100 flex items-center justify-center 
-    opacity-0 translate-y-10 transition-all duration-500 ease-out 
-    will-change-transform"
-      data-animate>
-      <div className="py-12 text-[#121212]">
+    <div id="skills" className="min-h-screen bg-[#F9F9F9] flex flex-col items-center pb-12">
+      <div className="py-12 text-[#4831D4]">
         <h1 className="text-center text-4xl mt-10">Skills</h1>
         <p className="text-center mt-4">This is the Skills section.</p>
+      </div>
+      <div className="pb-12 pt-4 sm:block md:hidden lg:hidden">
+        <Link
+          href="#skills"
+          className="py-2 px-4 text-[#CCF381] font-medium bg-[#4831D4] duration-150 active:bg-[#121212] active:text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#121212] rounded-lg shadow-md hover:shadow-lg border border-transparent hover:border-[#CCF381]"
+        >
+          Contact Me
+        </Link>
       </div>
     </div>
   );

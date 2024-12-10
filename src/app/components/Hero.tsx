@@ -2,6 +2,7 @@
 
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 export default function Hero() {
@@ -46,9 +47,14 @@ export default function Hero() {
                 </div>
 
                 {/* Right Section */}
-                <div className="lg:w-[40%] w-full h-screen bg-[#CCF381]">
+                <div className="lg:w-[40%] w-full h-screen bg-transparent">
                     <div className="flex items-center justify-center ">
-                        <Image src="/dev.svg" alt="shapes" width={400} height={400} className='object-container'/>
+                        <Image src="/dev.gif" alt="shapes" width={400} height={400} className='object-container' />
+                    </div>
+                    <div className="py-8 mt-6 hiddden md:flex justify-center">
+                        <Link href="#about" className="inline-block py-2 px-4 text-[#FFFFFF] font-medium bg-[#4831D4] duration-150 active:bg-[#121212] hover:bg-[#FFFFFF] hover:text-[#121212] rounded-lg shadow-md hover:shadow-md hover:border-[#4831D4]">
+                            About Me
+                        </Link>
                     </div>
                 </div>
             </div>

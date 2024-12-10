@@ -51,7 +51,7 @@ export default function Hero() {
                     <div className="flex items-center justify-center ">
                         <Image src="/dev.gif" alt="shapes" width={400} height={400} className='object-container' />
                     </div>
-                    <div className="p-8 mt-6 md:flex justify-center">
+                    <div className="p-8 mt-6 md:flex justify-center items-center">
                         <Link href="#about" className="inline-block py-2 px-4 text-[#FFFFFF] font-medium bg-[#4831D4] duration-150 active:bg-[#121212] hover:bg-[#FFFFFF] hover:text-[#121212] rounded-lg shadow-md hover:shadow-md hover:border-[#4831D4]">
                             About Me
                         </Link>

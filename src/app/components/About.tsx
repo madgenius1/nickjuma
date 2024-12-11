@@ -1,19 +1,35 @@
 
 import Link from "next/link";
-import { AiOutlineProfile } from "react-icons/ai";
+import { FaCode } from "react-icons/fa6";
+import TechStack from "./TechStack";
 
 
 
 export default function About() {
   return (
     <div id="about" className="min-h-screen py-12 bg-[#4831D4] flex flex-col items-center  pb-12">
-      <div className="py-8 flex lg:flex-row flex-col mx-auto max-w-screen-xl px-6 text-[#CCF381]">
-        <div className="flex flex-col justify-start p-8">
-        <AiOutlineProfile size={100} className="py-2 text-[#CCF381]" />
-          <h1 className="font-semibold text-3xl lg:text-4xl md:text-4xl mt-10 pb-4">About Me</h1>
-          <p className=" mt-4 leading-relaxed lg:w-[70%] w-full sm:text-sm lg:text-lg font-medium PY-2 text-[#FFFFFF]">
-            With expertise in XD, Figma, MERN and ReactNative, I design and build scalable web applications, intuitive user interfaces, and seamless digital experiences. <br />
-            I am passionate about turning ideas into innovations through clean code and creative problem-solving processes.</p>
+      <div className="py-4 flex lg:flex-row flex-col mx-auto max-w-screen-xl px-4 text-[#CCF381]">
+        <div className="flex lg:flex-row flex-col w-full justify-start px-4 py-6 gap-4">
+          <div className="flex flex-col lg:w-[60%] md:[60%] w-full">
+            <h1 className="font-semibold text-3xl lg:text-4xl md:text-4xl mt-10 pb-6">About Me</h1>
+            <p className=" leading-loose w-full flex justify-start sm:text-sm lg:text-lg font-light pt-4 py-2 text-[#FFFFFF]">
+              My background is in Aeronautical Engineering. My dev journey began by building Arduino Projects and Cross platform mobile apps in C# using Xamarin.
+            </p>
+            <p className="leading-loose w-full flex justify-start sm:text-sm lg:text-lg font-light py-2 text-[#FFFFFF]">
+              I am now experienced in XD, Figma, MERN, ReactNative, and NextJS. I use different tools to design and build scalable applications, intuitive user interfaces, and provide seamless digital experiences. <br />
+              I am passionate about turning ideas into innovations through clean code and creative problem-solving processes.
+            </p>
+            <p className="leading-loose w-full flex justify-start sm:text-sm lg:text-lg font-light py-2 text-[#FFFFFF]">
+              I also enjoy DIY wood work, reading, playing chess, rocket science, poetry, and visual art.
+            </p>
+          </div>
+          <div className="flex flex-col lg:w-[40%] md:w-full w-full">
+            <div className="mt-10 pb-4 flex flex-row items-center">
+              <FaCode size={60} className="text-[#CCF381] px-2" />
+              <h2 className=" text-3xl lg:text-4xl md:text-4xl font-semibold">Tech Stack</h2>
+            </div>
+            <TechStack />
+          </div>
         </div>
       </div>
 

@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        parallax: 'linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/sprinkle.svg")',
+        sprinkler: 'url("/sprinkler.svg")',
+
+      },
     },
   },
   plugins: [],

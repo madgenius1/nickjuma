@@ -3,28 +3,28 @@
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import Links from './Links';
 
 export default function Hero() {
     return (
-        <div className="min-h-screen bg-[#FFFFFD] flex flex-col items-center pb-12">
+        <div className="min-h-screen bg-fixed bg-parallax bg-cover bg-no-repeat flex flex-col items-center pb-12">
             <div className="flex flex-wrap lg:flex-nowrap mx-auto max-w-screen-xl px-6 py-8">
                 {/* Left Section */}
-                <div className="lg:w-[60%] w-full py-8 px-4 lg:px-8">
-                    <div className="py-6">
-                        <h2 className="text-[#4831D4] text-2xl lg:text-5xl md:text-4xl text-center lg:text-left">
-                            Hi, I am
+                <div className="lg:w-[60%] w-full py-8">
+                    <div className="py-4 -ml-6">
+                        <h2 className="text-[#4831D4] text-3xl lg:text-6xl md:text-5xl text-center lg:text-left">
+                            Hi, I'm
                             <span className="font-bold text-[#121212]"> Nick Juma</span>.
                         </h2>
-                        <p className="text-xl py-6 text-[#4831D4] text-center lg:text-left">
+                        <p className="text-3xl py-6 text-[#4831D4] text-center lg:text-left">
                             I am a
-                            <span className="font-semibold text-xl ml-2">
-                                Full Stack Developer Crafting Innovative Solutions.
+                            <span className="font-semibold text-3xl ml-2">
+                                Full Stack Developer.
                             </span>
                         </p>
                     </div>
-                    <div className="flex flex-col sm:flex-row text-[#4831D4] justify-center lg:justify-start items-center sm:items-start">
-                        <div className='text-2xl sm:order-1 font-medium'>
+                    <div className="flex flex-col sm:flex-row text-[#4831D4] -ml-6 justify-center lg:justify-start items-center sm:items-start">
+                        <div className='text-2xl sm:order-1 font-medium '>
                             I am skilled in
                         </div>
                         <div className="text-2xl ml-2 font-semibold text-[#121212] sm:order-2">
@@ -43,17 +43,20 @@ export default function Hero() {
                             />
                         </div>
                     </div>
+                    <div className="flex py-12 -ml-6 lg:justify-start justify-center">
+                        <Links />
+                    </div>
                 </div>
 
                 {/* Right Section */}
-                <div className="lg:w-[40%] w-full py-8 flex flex-col items-center justify-center">
+                <div className="lg:w-[40%] w-full flex flex-col items-center justify-center">
                     <div className="flex items-center justify-center px-4">
                         <Image
-                            src="/dev.gif"
-                            alt="devgif"
-                            width={400}
-                            height={400}
-                            className="object-fill py-2 shadow-md rounded-lg"
+                            src="/avatar.png"
+                            alt="avatar"
+                            width={500}
+                            height={500}
+                            className="object-contain py-2 shadow-lg px-2 rounded-full border border-[#4831D4] transition duration-300 ease-in-out hover:scale-110"
                             loading="lazy"
                         />
                     </div>
@@ -68,7 +71,6 @@ export default function Hero() {
                     About Me
                 </Link>
             </div>
-
         </div>
     );
 }

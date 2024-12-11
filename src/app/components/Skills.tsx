@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Skills() {
   return (
-    <div id="skills" className="min-h-screen bg-[#F9F9F9] flex flex-col items-center pb-12">
+    <div id="skills" className="min-h-screen bg-fixed bg-sprinkler bg-cover bg-no-repeat  flex flex-col items-center pb-12">
       <div className="py-12 text-[#4831D4]">
         <h1 className="text-center text-4xl mt-10">Skills</h1>
         <p className="text-center mt-4">This is the Skills section.</p>

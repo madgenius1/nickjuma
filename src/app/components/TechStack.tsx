@@ -15,6 +15,7 @@ import {
     SiPostgresql,
     SiMongodb,
     SiGithub,
+    SiDotnet ,
     SiJirasoftware,
     SiHeroku,
 } from "react-icons/si";
@@ -33,6 +34,7 @@ const tags = [
     { name: "Express", icon: <FaNodeJs /> },
     { name: "Postgres", icon: <SiPostgresql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
+    { name: ".NET", icon: <SiDotnet /> },
     { name: "GitHub", icon: <SiGithub /> },
     { name: "Jira", icon: <SiJirasoftware /> },
     { name: "Heroku", icon: <SiHeroku /> },

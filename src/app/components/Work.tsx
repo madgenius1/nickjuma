@@ -2,7 +2,6 @@
 import Link from "next/link";
 
 
-
 export default function Work() {
   return (
     <div id="work" className="min-h-screen bg-[#CCF381] flex flex-col items-center pb-12">
@@ -10,6 +9,11 @@ export default function Work() {
         <h1 className="text-center text-4xl mt-10">Work</h1>
         <p className="text-center mt-4">This is the Work section.</p>
       </div>
+
+
+
+
+      {/* Bottom Item */}
       <div className="pb-12 pt-4 sm:block md:hidden lg:hidden">
         <Link
           href="#skills"

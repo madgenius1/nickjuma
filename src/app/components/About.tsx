@@ -4,10 +4,9 @@ import { FaCode } from "react-icons/fa6";
 import TechStack from "./TechStack";
 
 
-
 export default function About() {
   return (
-    <div id="about" className="min-h-screen py-12 bg-[#4831D4] flex flex-col items-center  pb-12">
+    <div id="about" className="min-h-screen py-12 bg-[#4831D4] flex flex-col items-center px-6 pb-12">
       <div className="py-4 flex lg:flex-row flex-col mx-auto max-w-screen-xl px-4 text-[#CCF381]">
         <div className="flex lg:flex-row flex-col w-full justify-start px-4 py-6 gap-4">
           <div className="flex flex-col lg:w-[60%] md:[60%] w-full">

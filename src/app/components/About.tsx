@@ -7,12 +7,12 @@ import TechStack from "./TechStack";
 export default function About() {
   return (
     <div id="about" className="min-h-screen py-12 bg-[#4831D4] flex flex-col items-center px-6 pb-12">
-      <div className="py-4 flex lg:flex-row flex-col mx-auto max-w-screen-xl px-4 text-[#CCF381]">
-        <div className="flex lg:flex-row flex-col w-full justify-start px-4 py-6 gap-4">
+      <div className="py-4 flex lg:flex-row flex-col mx-auto max-w-screen-xl px-2 text-[#CCF381]">
+        <div className="flex lg:flex-row flex-col w-full justify-start px-2 py-6 gap-4">
           <div className="flex flex-col lg:w-[60%] md:[60%] w-full">
             <h1 className="font-semibold text-3xl lg:text-4xl md:text-4xl mt-10 pb-6">About Me</h1>
             <p className=" leading-loose w-full flex justify-start sm:text-sm lg:text-lg font-light pt-4 py-2 text-[#FFFFFF]">
-              My background is in Aeronautical Engineering. My dev journey began by building Arduino Projects and Cross platform mobile apps in C# using Xamarin.
+              My background is in Aeronautical Engineering. My dev journey began by building Arduino Projects and Cross platform mobile apps in C# using the Xamarin Platform.
             </p>
             <p className="leading-loose w-full flex justify-start sm:text-sm lg:text-lg font-light py-2 text-[#FFFFFF]">
               I am now experienced in XD, Figma, MERN, ReactNative, and NextJS. I use different tools to design and build scalable applications, intuitive user interfaces, and provide seamless digital experiences. <br />

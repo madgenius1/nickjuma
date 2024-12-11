@@ -7,6 +7,7 @@ import {
     FaCss3Alt,
     FaAws,
     FaDocker,
+    FaPython ,
 } from "react-icons/fa";
 import {
     SiTypescript,
@@ -18,6 +19,7 @@ import {
     SiDotnet ,
     SiJirasoftware,
     SiHeroku,
+    SiPython,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
@@ -35,6 +37,7 @@ const tags = [
     { name: "Postgres", icon: <SiPostgresql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: ".NET", icon: <SiDotnet /> },
+    { name: "Python", icon: <SiPython /> },
     { name: "GitHub", icon: <SiGithub /> },
     { name: "Jira", icon: <SiJirasoftware /> },
     { name: "Heroku", icon: <SiHeroku /> },

@@ -71,7 +71,7 @@ export default function TechStack() {
             animate="visible"
         >
             {" "}
-            {tags.map((tag, index) => (
+            {tags.map((tag) => (
                 <motion.div
                     key={tag.name}
                     className="flex items-center bg-[#CCF381] text-[#4831D4] hover:bg-gray-800 hover:text-white  rounded-md px-4 py-2"

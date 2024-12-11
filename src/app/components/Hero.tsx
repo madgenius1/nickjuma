@@ -13,7 +13,7 @@ export default function Hero() {
                 <div className="lg:w-[60%] w-full py-8">
                     <div className="py-4 -ml-6">
                         <h2 className="text-[#4831D4] text-3xl lg:text-6xl md:text-5xl text-center lg:text-left">
-                            Hi, I'm
+                            Hi, I&apos;m
                             <span className="font-bold text-[#121212]"> Nick Juma</span>.
                         </h2>
                         <p className="text-3xl py-6 text-[#4831D4] text-center lg:text-left">

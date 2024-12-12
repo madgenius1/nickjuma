@@ -21,7 +21,7 @@ export default function Skills() {
       {/* Bottom Item */}
       <div className="pb-12 pt-4 sm:block md:hidden lg:hidden">
         <Link
-          href="#skills"
+          href="#contact"
           className="py-2 px-4 text-[#CCF381] font-medium bg-[#4831D4] duration-150 active:bg-[#121212] active:text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#121212] rounded-lg shadow-md hover:shadow-lg border border-transparent hover:border-[#CCF381]"
         >
           Contact Me

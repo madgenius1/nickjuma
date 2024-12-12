@@ -12,8 +12,9 @@ export default function Work() {
       </div>
 
       {/*Project List*/}
-
-      <ProjectList />
+      <div className="px-4 py-6">
+        <ProjectList />
+      </div>
 
 
       {/* Bottom Item */}

@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import {
     FaJsSquare,
     FaReact,
@@ -7,7 +8,7 @@ import {
     FaCss3Alt,
     FaAws,
     FaDocker,
-    FaPython ,
+    FaPython,
 } from "react-icons/fa";
 import {
     SiTypescript,
@@ -16,7 +17,7 @@ import {
     SiPostgresql,
     SiMongodb,
     SiGithub,
-    SiDotnet ,
+    SiDotnet,
     SiJirasoftware,
     SiHeroku,
 } from "react-icons/si";
@@ -55,6 +56,7 @@ const containerVariants = {
         },
     },
 };
+
 const itemVariants = {
     hidden: {
         opacity: 0,
@@ -67,24 +69,33 @@ const itemVariants = {
 };
 
 export default function TechStack() {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({
+        threshold: 0.2, 
+    });
+
+    if (inView) {
+        controls.start("visible");
+    }
+
     return (
         <motion.div
-            className="flex flex-wrap gap-2 py-4 px-s"
+            ref={ref}
+            className="flex flex-wrap gap-2 py-4 px-2"
             variants={containerVariants}
             initial="hidden"
-            animate="visible"
+            animate={controls}
         >
-            {" "}
             {tags.map((tag) => (
                 <motion.div
                     key={tag.name}
-                    className="flex items-center bg-[#CCF381] text-[#4831D4] hover:bg-gray-800 hover:text-white  rounded-md px-4 py-2"
+                    className="flex items-center bg-[#CCF381] text-[#4831D4] hover:bg-gray-800 hover:text-white rounded-md px-4 py-2"
                     variants={itemVariants}
                 >
-                    {" "}
-                    <span className="mr-2">{tag.icon}</span> {tag.name}{" "}
+                    <span className="mr-2">{tag.icon}</span>
+                    {tag.name}
                 </motion.div>
-            ))}{" "}
+            ))}
         </motion.div>
     );
 }

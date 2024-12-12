@@ -8,28 +8,49 @@ const projects = [
         imgSrc: "/blackicon.svg",
         imgAlt: "Batian Technolgies",
         title: "Batian Technologies",
-        description: "Corporate Website",
         linkHref: "https://www.batiantechnologies.com",
-        stack: "ReactJS - TailwindCSS - MongoDB",
+        stack: "ReactJS - TailwindCSS - MongoDB- NodeJs",
         paragraph: "Corporate website for Batian Technologies. The site highlights the organization's software solutions developed to meet client demands.",
     },
     {
         imgSrc: "/grace.svg",
         imgAlt: "Grace Kimani",
         title: "Grace Kimani",
-        description: "Advocate Firm Website",
         linkHref: "https://gracekimaniadvocates.co.ke/",
         stack: "NextJS - TailwindCSS - MongoDB",
-        paragraph: "Lawfirm website for client. The website provides insight into the advocacy services and practice areas offered by Adv. Grace Kimani.",
+        paragraph: "Lawfirm website for client. The website provides insight into the practice areas and legal services offered by Grace Kimani.",
     },
     {
         imgSrc: "/kolwezi.png",
         imgAlt: "Kolwezi Hardware",
         title: "Kolwezi Hardware",
-        description: "Hardware Website and ERP",
         linkHref: "https://kolwezi.vercel.app/",
         stack: "NextJS - TailwindCSS - MongoDB",
         paragraph: "Hardware store website and ERP. The website showcases the products and services that Kolwezi Hardware offers to customers. ",
+    },
+    {
+        imgSrc: "/d2d.png",
+        imgAlt: "d2d app",
+        title: "d2d App",
+        linkHref: "https://www.d2dapp.com/",
+        stack: "NextJS - ReactNative - NodeJS - MongoDB",
+        paragraph: "Founded D2D App startup for door to door deliveries. The platform addresses the last mile delivery challenge in Kenyan urban centers. ",
+    },
+    {
+        imgSrc: "/kiota.svg",
+        imgAlt: "Kiota",
+        title: "Kiota App",
+        linkHref: "https://www.kiota.batiantechnologies.com",
+        stack: "NextJS - ReactNative - NodeJS - MongoDB",
+        paragraph: "Founded Kiota App startup for savings and investment. It enables MOP and BOP access savings and investment opportunities.",
+    },
+    {
+        imgSrc: "/afex.png",
+        imgAlt: "Afex Hub",
+        title: "Afex Hub",
+        linkHref: "https://www.afexhub.co.ke/",
+        stack: "NextJS - TailwindCSS -NodeJs - MongoDB",
+        paragraph: "EdTech website and web app for AfexHub. The platform provides courses and training for SAT, GRE, GMAT, IELTS, and TOEFL tests. ",
     },
 ];
 
@@ -41,11 +62,11 @@ const cardVariants = {
 export default function ProjectList() {
     return (
         <main>
-            <div className="px-6 grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-8">
+            <div className="px-4 grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-8">
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}
-                        className="h-auto w-auto border bg-gray-50 rounded-2xl shadow-lg shadow-gray-400 p-6"
+                        className="h-auto w-auto border bg-gray-50 rounded-2xl shadow-md shadow-gray-400 p-6"
                         variants={cardVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -79,9 +100,9 @@ export default function ProjectList() {
                                 href={project.linkHref}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-sm text-white bg-[#4831D4] hover:bg-gray-800 hover:text-[#CCF381] active:bg-[#121212] px-4 py-2 w-[45%] rounded-md shadow-md transition duration-200"
+                                className="flex items-center gap-2 text-sm text-white bg-[#4831D4] hover:bg-gray-800 hover:text-[#CCF381] active:bg-[#121212] px-4 py-2 w-[50%] rounded-md shadow-md transition duration-200"
                             >
-                                Learn More
+                                Live site
                                 <IoMdExit size={20} />
                             </Link>
                         </div>

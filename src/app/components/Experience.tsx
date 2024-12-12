@@ -14,6 +14,7 @@ export default function Experience() {
                 <div className="flex flex-col lg:w-[40%] md:w-full w-full">
             <div className=" pb-4 flex flex-row items-center">
               <h2 className=" text-3xl lg:text-4xl md:text-4xl text-black font-semibold">Tech Stack</h2>
+              <Link href="#">Link</Link>
             </div>
             
           </div>

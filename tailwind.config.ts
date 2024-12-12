@@ -15,6 +15,7 @@ export default {
       backgroundImage: {
         parallax: 'linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/sprinkle.svg")',
         sprinkler: 'url("/sprinkler.svg")',
+        sprinklet: 'url("/sprinklet.svg")',
 
       },
     },

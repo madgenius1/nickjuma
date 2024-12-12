@@ -69,7 +69,7 @@ const itemVariants = {
 export default function TechStack() {
     return (
         <motion.div
-            className="flex flex-wrap gap-2 p-4"
+            className="flex flex-wrap gap-2 py-4 px-s"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

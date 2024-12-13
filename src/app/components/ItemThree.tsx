@@ -1,30 +1,16 @@
-import {
-    FaReact,
-    FaNodeJs,
-} from "react-icons/fa";
-import {
-    SiPostgresql,
-    SiDotnet ,
-} from "react-icons/si";
-import { TbAutomation } from "react-icons/tb";
+
+import { FaTools } from "react-icons/fa";
+import { MdLocalAirport } from "react-icons/md";
+
 
 export default function ItemThree() {
     return (
         <div className="flex flex-wrap mt-4 gap-3">
             <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <FaReact className="mr-2" /> ReactJs
+                <MdLocalAirport className="mr-2" /> Aircrafts
             </button>
             <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <SiPostgresql className="mr-2" /> PostgreSQL
-            </button>
-            <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <SiDotnet className="mr-2" /> .NET
-            </button>
-            <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <TbAutomation className="mr-2" /> Automation
-            </button>
-            <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <FaNodeJs className="mr-2" />  NodeJS
+                <FaTools className="mr-2" /> Maintenance
             </button>
         </div>
     );

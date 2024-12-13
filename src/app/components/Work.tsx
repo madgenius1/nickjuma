@@ -12,19 +12,8 @@ export default function Work() {
       </div>
 
       {/*Project List*/}
-      <div className="px-4 py-6">
+      <div className="px-2 py-6">
         <ProjectList />
-      </div>
-
-
-      {/* Bottom Item */}
-      <div className="pb-12 pt-4 sm:block md:hidden lg:hidden">
-        <Link
-          href="#skills"
-          className="py-2 px-4 text-[#FFFFFF] font-medium bg-[#4831D4] duration-150 active:bg-[#121212] active:text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#121212] rounded-lg shadow-md hover:shadow-lg border border-transparent hover:border-[#CCF381]"
-        >
-          My Skill Set
-        </Link>
       </div>
     </div>
   );

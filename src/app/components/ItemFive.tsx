@@ -1,31 +1,21 @@
-import {
-    FaReact,
-    FaNodeJs,
-} from "react-icons/fa";
-import {
-    SiPostgresql,
-    SiDotnet ,
-} from "react-icons/si";
-import { TbAutomation } from "react-icons/tb";
+
+import { IoMdRocket } from "react-icons/io";
+import { HiMiniSignal } from "react-icons/hi2";
+import { SiOpentelemetry } from "react-icons/si";
 
 
-export default function ItemFive() {
+
+export default function ItemThree() {
     return (
         <div className="flex flex-wrap mt-4 gap-3">
             <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <FaReact className="mr-2" /> ReactJs
+                <IoMdRocket className="mr-2" /> Rockets LEOP
             </button>
             <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <SiPostgresql className="mr-2" /> PostgreSQL
+                <HiMiniSignal className="mr-2" /> Signal Integrity Test
             </button>
             <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <SiDotnet className="mr-2" /> .NET
-            </button>
-            <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <TbAutomation className="mr-2" /> Automation
-            </button>
-            <button className="flex items-center bg-[#FFFFFF] text-[#121212] hover:bg-[#000EEE] hover:text-white transition-all rounded-lg px-4 py-2 shadow-sm">
-                <FaNodeJs className="mr-2" />  NodeJS
+                <SiOpentelemetry className="mr-2" /> Telemetry and Tracking
             </button>
         </div>
     );

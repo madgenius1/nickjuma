@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Experience() {
     return (
-        <div className="min-h-screen bg-[#CCF381] flex flex-col items-center pb-12 max-w-screen-xl">
+        <div id="experience" className="min-h-screen bg-[#CCF381] flex flex-col items-center pb-12 max-w-screen-xl">
             <div className="flex lg:flex-row flex-col w-full justify-start px-4 py-6 gap-4">
                 <div className="flex flex-col lg:w-[60%] md:[60%] w-full lg:px-8 ">
                     <div className="py-6">

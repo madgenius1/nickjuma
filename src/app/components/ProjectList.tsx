@@ -17,7 +17,7 @@ const projects = [
         imgAlt: "Grace Kimani",
         title: "Grace Kimani",
         linkHref: "https://gracekimaniadvocates.co.ke/",
-        stack: "NextJS - TailwindCSS - MongoDB",
+        stack: "NextJS - TailwindCSS - PostgresSQL",
         paragraph: "Lawfirm website for client. The website provides insight into the practice areas and legal services offered by Grace Kimani.",
     },
     {
@@ -25,7 +25,7 @@ const projects = [
         imgAlt: "Kolwezi Hardware",
         title: "Kolwezi Hardware",
         linkHref: "https://kolwezi.vercel.app/",
-        stack: "NextJS - TailwindCSS - MongoDB",
+        stack: "NextJS - TailwindCSS - PostgresSQL",
         paragraph: "Hardware store website and ERP. The website showcases the products and services that Kolwezi Hardware offers to customers. ",
     },
     {

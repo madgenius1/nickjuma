@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +12,12 @@ export default function Hero() {
             <div className="flex flex-wrap lg:flex-nowrap mx-auto max-w-screen-xl px-6 py-8">
                 {/* Left Section */}
                 <div className="lg:w-[60%] w-full py-8">
-                    <div className="py-4 -ml-6">
+                    <motion.div
+                        initial={{ x: "-100%", opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ type: "tween", duration: 0.8 }}
+                        className="py-4 -ml-6"
+                    >
                         <h2 className="text-[#4831D4] text-3xl lg:text-6xl md:text-5xl text-center lg:text-left">
                             Hi, I&apos;m
                             <span className="font-bold text-[#121212]"> Nick Juma</span>.
@@ -22,11 +28,14 @@ export default function Hero() {
                                 Full Stack Developer.
                             </span>
                         </p>
-                    </div>
-                    <div className="flex flex-col sm:flex-row text-[#4831D4] -ml-6 justify-center lg:justify-start items-center sm:items-start">
-                        <div className='text-2xl sm:order-1 font-medium '>
-                            I am skilled in
-                        </div>
+                    </motion.div>
+                    <motion.div
+                        initial={{ x: "-100%", opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ type: "tween", duration: 1, delay: 0.3 }}
+                        className="flex flex-col sm:flex-row text-[#4831D4] -ml-6 justify-center lg:justify-start items-center sm:items-start"
+                    >
+                        <div className="text-2xl sm:order-1 font-medium">I am skilled in</div>
                         <div className="text-2xl ml-2 font-semibold text-[#121212] sm:order-2">
                             <Typewriter
                                 options={{
@@ -35,17 +44,22 @@ export default function Hero() {
                                         "Developing Websites.",
                                         "Developing PWAs.",
                                         "Developing Mobile Apps.",
-                                        "Developing Desktop Apps."
+                                        "Developing Desktop Apps.",
                                     ],
                                     autoStart: true,
                                     loop: true,
                                 }}
                             />
                         </div>
-                    </div>
-                    <div className="flex py-12 -ml-6 lg:justify-start justify-center">
+                    </motion.div>
+                    <motion.div
+                        initial={{ x: "-100%", opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ type: "tween", duration: 1, delay: 0.6 }}
+                        className="flex py-12 -ml-6 lg:justify-start justify-center"
+                    >
                         <Links />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Right Section */}

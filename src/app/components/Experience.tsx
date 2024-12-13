@@ -1,5 +1,4 @@
 
-import Link from "next/link";
 import ExperienceList from "./ExperienceList";
 
 export default function Experience() {

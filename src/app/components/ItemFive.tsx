@@ -1,14 +1,11 @@
 import {
     FaReact,
     FaNodeJs,
-    FaDocker,
 } from "react-icons/fa";
 import {
     SiPostgresql,
-    SiMongodb,
     SiDotnet ,
 } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
 import { TbAutomation } from "react-icons/tb";
 
 

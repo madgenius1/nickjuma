@@ -1,6 +1,9 @@
 
 import ItemOne from "./ItemOne"
 import ItemTwo from "./ItemTwo"
+import ItemThree from "./ItemThree"
+import ItemFour from "./ItemFour"
+import ItemFive from "./ItemFive"
 
 
 const experiences = [
@@ -10,7 +13,7 @@ const experiences = [
         role: "Full Stack Developer",
         location: "Nairobi",
         statement: "I helped built client SPAs and PWAs, mobile app pages, ERPs, and CRM modules, increasing margins. I reduced routine tasks through automation, improving overall efficiency. I also founded two startups, D2D and Kiota App.",
-        item: <ItemOne />
+        item: <ItemOne />,
     },
     {
         organization: "Alan Dick EA.",
@@ -18,7 +21,7 @@ const experiences = [
         role: "Software Developer",
         location: "Nairobi",
         statement: "C# backend developer for IP software used for Remote Monitoring System. Built aggregator for the system. Used NI Labview for Graphical Programming and Ranorex for automation.",
-        item: <ItemTwo />
+        item: <ItemTwo />,
     },
     {
         organization: "AlS Kenya",
@@ -26,6 +29,7 @@ const experiences = [
         role: "Maintenance Intern",
         location: "Nairobi",
         statement: "Aircraft maintenance intern. Took part in DHC-8 100 avionic tasks during C-check.",
+        item: <ItemThree />,
     },
     {
         organization: "Jambojet.",
@@ -33,6 +37,7 @@ const experiences = [
         role: "Technical Trainee",
         location: "Nairobi",
         statement: "Participated in routine and non-routine line and base maintenance tasks for DHC-8 400 aircraft. Conducted troubleshooting and normalization of avionic components.",
+        item: <ItemFour />,
     },
     {
         organization: "Brogio Space Center.",
@@ -40,6 +45,7 @@ const experiences = [
         role: "TT&C Intern",
         location: "Nairobi",
         statement: "Performed Telemetry, Tracking, and Communication tasks for AGILE, Nustar, Aqua, and Swift satellites. Configuration of TX/RX and signal processing. Rocket pre-launch, launch and LEOP support.",
+        item: <ItemFive />,
     },
 ]
 

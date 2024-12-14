@@ -20,8 +20,10 @@ export default function Navbar() {
         { text: "Home", href: "/" },
         { text: "About", href: "#about" },
         { text: "Work", href: "#work" },
+        { text: "Experience", href: "#experience" },
         { text: "Skills", href: "#skills" },
         { text: "Contact", href: "#contact" },
+        { text: "Resume", href: "https://drive.google.com/file/d/1XE70dowOqVWfD92Ics-806UexylU3iZe/view?usp=drive_link" },
     ];
 
     return (
@@ -68,7 +70,7 @@ export default function Navbar() {
                                     : "opacity-0 delay-0"
                                 }`}
                             style={{ transitionDelay: `${index * 200}ms` }}
-                            onClick={() => setMenuOpen(false)} // Close menu on link click
+                            onClick={() => setMenuOpen(false)} // Closes menu on link click
                         >
                             {link.text}
                         </Link>

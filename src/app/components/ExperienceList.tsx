@@ -15,7 +15,7 @@ const experiences = [
         item: <ItemOne />,
     },
     {
-        organization: "Alan Dick EA.",
+        organization: "Alan Dick EA",
         duration: "2020-2021",
         role: "Software Developer",
         location: "Nairobi",
@@ -27,11 +27,11 @@ const experiences = [
         duration: "Mar-Apr 2020",
         role: "Maintenance Intern",
         location: "Nairobi",
-        statement: "Aircraft maintenance intern. Took part in DHC-8 100 avionic tasks during C-check.",
+        statement: "Aircraft maintenance intern. Took part in DHC-8 100 avionics tasks during C-check.",
         item: <ItemThree />,
     },
     {
-        organization: "Jambojet.",
+        organization: "Jambojet",
         duration: "May-Dec 2019",
         role: "Technical Trainee",
         location: "Nairobi",
@@ -39,7 +39,7 @@ const experiences = [
         item: <ItemFour />,
     },
     {
-        organization: "Brogio Space Center.",
+        organization: "Brogio Space Center",
         duration: "Sep-Dec 2018",
         role: "TT&C Intern",
         location: "Nairobi",
@@ -47,6 +47,15 @@ const experiences = [
         item: <ItemFive />,
     },
 ];
+
+// Statistics items
+const statistics = [
+    { label: "Years Experience", value: "4+" },
+    { label: "Projects Completed", value: "25+" },
+    { label: "Happy Clients", value: "15+" },
+    { label: "Startups", value: "2" },
+];
+
 
 // Animation Variants
 const containerVariants = {
@@ -66,44 +75,69 @@ const itemVariants = {
 
 export default function ExperienceList() {
     return (
-        <motion.main
-            className="flex flex-col gap-2"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-        >
-            {experiences.map((experience, index) => (
-                <motion.section
-                    key={index}
-                    className="w-full flex flex-col lg:flex-row justify-center py-4 gap-8"
-                    variants={itemVariants}
+        <main>
+            {/* Statistics Section */}
+            <h2 className="text-[#FFFFFF] text-xl font-medium px-6 sm:block md:hidden lg:hidden pb-2"> So Far...</h2>
+            <div className="flex flex-col md:flex-row justify-center items-start gap-8 px-6 -mt-6 py-8">
+                <motion.div
+                    className="grid grid-cols-2 gap-6 md:gap-8 md:grid-cols-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, staggerChildren: 0.2 }}
                 >
-                    <article className="lg:w-[90%] w-full p-6 bg-gray-800 shadow-md rounded-lg">
-                        <div className="mb-6">
-                            <div className="flex justify-between gap-2 items-center">
-                                <h2 className="text-lg text-[#FFFFFF] font-semibold">
-                                    {experience.organization}
-                                </h2>
-                                <span className="text-md text-[#FFFFFF] font-normal">
-                                    {experience.duration}
-                                </span>
+                    {statistics.map((stat, index) => (
+                        <motion.div
+                            key={index}
+                            className="bg-gray-800 text-[#0AEF94] hover:bg-white hover:text-[#4831D4] rounded-md shadow-md px-4 py-4 text-center transition-all duration-300"
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            <p className="text-3xl font-bold">{stat.value}</p>
+                            <p className="text-sm font-medium">{stat.label}</p>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </div>
+
+            {/* Experience List Section */}
+            <motion.main
+                className="flex flex-col gap-2"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+            >
+                {experiences.map((experience, index) => (
+                    <motion.section
+                        key={index}
+                        className="w-full flex flex-col lg:flex-row justify-center py-4 gap-8"
+                        variants={itemVariants}
+                    >
+                        <article className="lg:w-[90%] w-full p-6 bg-gray-800 shadow-md rounded-lg">
+                            <div className="mb-6">
+                                <div className="flex justify-between gap-2 items-center">
+                                    <h2 className="text-lg text-[#FFFFFF] font-semibold">
+                                        {experience.organization}
+                                    </h2>
+                                    <span className="text-md text-[#FFFFFF] font-normal">
+                                        {experience.duration}
+                                    </span>
+                                </div>
+                                <div className="flex justify-between items-center mt-2">
+                                    <h3 className="text-lg text-[#0AEF94] font-medium">
+                                        {experience.role}
+                                    </h3>
+                                    <span className="text-md text-[#FFFFFF] font-normal">
+                                        {experience.location}
+                                    </span>
+                                </div>
                             </div>
-                            <div className="flex justify-between items-center mt-2">
-                                <h3 className="text-lg text-[#0AEF94] font-medium">
-                                    {experience.role}
-                                </h3>
-                                <span className="text-md text-[#FFFFFF] font-normal">
-                                    {experience.location}
-                                </span>
-                            </div>
-                        </div>
-                        <p className="text-md text-white leading-relaxed font-normal">
-                            {experience.statement}
-                        </p>
-                        <div className="py-2">{experience.item}</div>
-                    </article>
-                </motion.section>
-            ))}
-        </motion.main>
+                            <p className="text-md text-white leading-relaxed font-normal">
+                                {experience.statement}
+                            </p>
+                            <div className="py-2">{experience.item}</div>
+                        </article>
+                    </motion.section>
+                ))}
+            </motion.main>
+        </main>
     );
 }

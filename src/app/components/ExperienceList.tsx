@@ -11,7 +11,7 @@ const experiences = [
         duration: "2021-Now",
         role: "Full Stack Developer",
         location: "Nairobi",
-        statement: "Built client SPAs and PWAs, mobile app pages, ERPs, and CRM modules, increasing margins. I reduced routine tasks through automation, improving overall efficiency. I also founded two startups, D2D and Kiota App.",
+        statement: "Built client SPAs and PWAs, mobile app screens, ERPs, and CRM modules, increasing margins. I reduced routine tasks through automation, improving overall efficiency. I also founded two startups, D2D and Kiota App.",
         item: <ItemOne />,
     },
     {

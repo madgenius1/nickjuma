@@ -48,7 +48,7 @@ const projects = [
         imgSrc: "/afex.png",
         imgAlt: "Afex Hub",
         title: "Afex Hub",
-        linkHref: "https://www.afexhub.co.ke/",
+        linkHref: "http://afexhub.vercel.app/",
         stack: "NextJS - TailwindCSS -NodeJs - MongoDB",
         paragraph: "EdTech website and web app for AfexHub. The platform provides courses and training for SAT, GRE, GMAT, IELTS, and TOEFL tests. ",
     },

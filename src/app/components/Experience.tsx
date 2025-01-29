@@ -7,7 +7,7 @@ export default function Experience() {
     return (
         <div
             id="experience"
-            className="min-h-screen bg-[#111111] flex flex-col items-center pb-12 px-4 lg:px-8 max-w-screen-xl mx-auto"
+            className="min-h-screen bg-[#111111] flex flex-col items-center pb-12 px-4 lg:px-8 mx-auto"
         >
             <div className="py-12 px-4 text-[#FFFFFF]">
                 <h1 className="text-center text-4xl font-semibold mt-8">Experience</h1>

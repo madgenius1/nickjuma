@@ -50,7 +50,7 @@ const experiences = [
 
 // Statistics items
 const statistics = [
-    { label: "Years Experience", value: "4+" },
+    { label: "Years Experience", value: "5+" },
     { label: "Projects Completed", value: "25+" },
     { label: "Happy Clients", value: "15+" },
     { label: "Startups", value: "2" },

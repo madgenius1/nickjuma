@@ -50,7 +50,7 @@ const projects = [
         title: "Afex Hub",
         linkHref: "http://afexhub.vercel.app/",
         stack: "NextJS - TailwindCSS -NodeJs - MongoDB",
-        paragraph: "EdTech website and web app for AfexHub. The platform provides courses and training for SAT, GRE, GMAT, IELTS, and TOEFL tests. ",
+        paragraph: "EdTech website and web app for AfexHub. The platform provides test prep and training for SAT tests. ",
     },
 ];
 
@@ -62,7 +62,7 @@ const cardVariants = {
 export default function ProjectList() {
     return (
         <main>
-            <div className="px-4 grid grid-cols-1 gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-8 max-w-screen-xl">
+            <div className="px-4 grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-8 max-w-screen-xl">
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}

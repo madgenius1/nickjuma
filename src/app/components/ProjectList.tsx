@@ -52,6 +52,14 @@ const projects = [
         stack: "NextJS - TailwindCSS -NodeJs - MongoDB",
         paragraph: "EdTech website and web app for AfexHub. The platform provides test prep and training for SAT tests. ",
     },
+    {
+        imgSrc: "/avyra.png",
+        imgAlt: "Avyra Styles",
+        title: "Avyra Styles",
+        linkHref: "https://avyrastyles.vercel.app/",
+        stack: "NextJS - TailwindCSS -NodeJs - GraphQL- Shopify",
+        paragraph: "Ecommerce website with Nextjs frontend and powered by Shopify. ",
+    },
 ];
 
 const cardVariants = {

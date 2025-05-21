@@ -48,7 +48,7 @@ const projects = [
         imgSrc: "/afex.png",
         imgAlt: "Afex Hub",
         title: "Afex Hub",
-        linkHref: "http://afexhub.co.ke/",
+        linkHref: "https://testprep.afexhub.co.ke/",
         stack: "NextJS - TailwindCSS -NodeJs - MongoDB",
         paragraph: "EdTech website and web app for AfexHub. The platform provides test prep and training for SAT tests. ",
     },

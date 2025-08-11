@@ -26,7 +26,7 @@ export default function Footer() {
                         <Link href="#skills" className="text-md text-[#FFFFFF] hover:text-[#CCF381]">
                             Skills
                         </Link>
-                        <Link href="https://drive.google.com/file/d/1qO2qIFsXvw6tIoe_v9nukkX7-xAl09io/view?usp=drive_link" target="_blank" className="text-md text-[#FFFFFF] hover:text-[#CCF381]">
+                        <Link href="https://drive.google.com/file/d/1_23fbdZ2zw9wfl2byzBGP0Vp_2s-A5i9/view?usp=sharing" target="_blank" className="text-md text-[#FFFFFF] hover:text-[#CCF381]">
                             Resume
                         </Link>
                     </nav>

@@ -36,14 +36,14 @@ const projects = [
         stack: "NextJS - ReactNative - NodeJS - MongoDB",
         paragraph: "Founded D2D App startup for door to door deliveries. The platform addresses the last mile delivery challenge in Kenyan urban centers. ",
     },
-    {
-        imgSrc: "/kiota.svg",
-        imgAlt: "Kiota",
-        title: "Kiota App",
-        linkHref: "https://www.kiota.batiantechnologies.com",
-        stack: "NextJS - ReactNative - NodeJS - MongoDB",
-        paragraph: "Founded Kiota App startup for savings and investment. It enables MOP and BOP access savings and investment opportunities.",
-    },
+    // {
+    //     imgSrc: "/kiota.svg",
+    //     imgAlt: "Kiota",
+    //     title: "Kiota App",
+    //     linkHref: "https://www.kiota.batiantechnologies.com",
+    //     stack: "NextJS - ReactNative - NodeJS - MongoDB",
+    //     paragraph: "Founded Kiota App startup for savings and investment. It enables MOP and BOP access savings and investment opportunities.",
+    // },
     {
         imgSrc: "/afex.png",
         imgAlt: "Afex Hub",
@@ -53,13 +53,21 @@ const projects = [
         paragraph: "EdTech website and web app platform for AFEX Hub. The platform provides test prep and training for SAT tests. ",
     },
     {
-        imgSrc: "/avyra.png",
-        imgAlt: "Avyra Styles",
-        title: "Avyra Styles",
-        linkHref: "https://avyrastyles.vercel.app/",
-        stack: "NextJS - TailwindCSS -NodeJs - GraphQL- Shopify",
-        paragraph: "Ecommerce website with Nextjs frontend and powered by Shopify. ",
+        imgSrc: "/akeenahlogo.png",
+        imgAlt: "Akeenah Group",
+        title: "Akeenah Group Limited",
+        linkHref: "https://www.akeenahgroup.com/",
+        stack: "NextJS - TailwindCSS - PayloadCMS - MongoDB",
+        paragraph: "Company website for Akeenah Group. It is a leading African procurement and supplying company for industrial products. ",
     },
+    // {
+    //     imgSrc: "/avyra.png",
+    //     imgAlt: "Avyra Styles",
+    //     title: "Avyra Styles",
+    //     linkHref: "https://avyrastyles.vercel.app/",
+    //     stack: "NextJS - TailwindCSS -NodeJs - GraphQL- Shopify",
+    //     paragraph: "Ecommerce website with Nextjs frontend and powered by Shopify. ",
+    // },
 ];
 
 const cardVariants = {

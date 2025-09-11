@@ -4,8 +4,6 @@ import {
     FaJsSquare,
     FaReact,
     FaNodeJs,
-    FaHtml5,
-    FaCss3Alt,
     FaAws,
     FaDocker,
     FaPython,
@@ -18,18 +16,15 @@ import {
     SiMongodb,
     SiGithub,
     SiDotnet,
-    SiJirasoftware,
-    SiHeroku,
+    // SiHeroku,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
 const tags = [
-    { name: "HTML", icon: <FaHtml5 /> },
-    { name: "CSS", icon: <FaCss3Alt /> },
     { name: "JavaScript", icon: <FaJsSquare /> },
     { name: "TypeScript", icon: <SiTypescript /> },
     { name: "Tailwindcss", icon: <SiTailwindcss /> },
-    { name: "React", icon: <FaReact /> },
+    { name: "ReactJS", icon: <FaReact /> },
     { name: "Nextjs", icon: <RiNextjsFill /> },
     { name: "Redux", icon: <SiRedux /> },
     { name: "NodeJS", icon: <FaNodeJs /> },
@@ -39,8 +34,7 @@ const tags = [
     { name: ".NET", icon: <SiDotnet /> },
     { name: "Python", icon: <FaPython /> },
     { name: "GitHub", icon: <SiGithub /> },
-    { name: "Jira", icon: <SiJirasoftware /> },
-    { name: "Heroku", icon: <SiHeroku /> },
+    // { name: "Heroku", icon: <SiHeroku /> },
     { name: "Docker", icon: <FaDocker /> },
     { name: "AWS", icon: <FaAws /> },
 ];

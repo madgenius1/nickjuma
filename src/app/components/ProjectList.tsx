@@ -18,7 +18,7 @@ const projects = [
         title: "Grace Kimani",
         linkHref: "https://gracekimaniadvocates.co.ke/",
         stack: "NextJS - TailwindCSS - PostgreSQL",
-        paragraph: "Lawfirm website for client. The website provides insight into the practice areas and legal services offered by Grace Kimani.",
+        paragraph: "Lawfirm website for client. The website provides insight into the practice areas and legal services offered by Grace Kimani. Website allows visitors to get custom legal documents online.",
     },
     {
         imgSrc: "/kolwezi.png",
@@ -26,7 +26,7 @@ const projects = [
         title: "Kolwezi Hardware",
         linkHref: "https://kolwezi.vercel.app/",
         stack: "NextJS - TailwindCSS - PostgreSQL",
-        paragraph: "Hardware store website and ERP. The website showcases the products and services that Kolwezi Hardware offers to customers. ",
+        paragraph: "Hardware store website and ERP. The website showcases the products and services that Kolwezi Hardware offers to customers. ERP has IMS and POS integration. ",
     },
     {
         imgSrc: "/d2d.png",
@@ -50,7 +50,7 @@ const projects = [
         title: "Afex Hub",
         linkHref: "https://www.afexhub.co.ke/",
         stack: "NextJS - TailwindCSS -NodeJs - MongoDB",
-        paragraph: "EdTech website and web app platform for AFEX Hub. The platform provides test prep and training for SAT tests. ",
+        paragraph: "EdTech website and web app platform for AFEX Hub. The platform provides test prep and training for SAT tests. Integrates payment gateway and smart testing. ",
     },
     {
         imgSrc: "/akeenahlogo.png",
@@ -58,7 +58,15 @@ const projects = [
         title: "Akeenah Group Limited",
         linkHref: "https://www.akeenahgroup.com/",
         stack: "NextJS - TailwindCSS - PayloadCMS - MongoDB",
-        paragraph: "Company website for Akeenah Group. It is a leading African procurement and supplying company for industrial products. ",
+        paragraph: "Company website for Akeenah Group. It is a leading African procurement and supplying company for industrial products. Incoporates multiple languages. ",
+    },
+    {
+        imgSrc: "/dianipetcare.png",
+        imgAlt: "Diani Pet Care",
+        title: "Diani Pet Care",
+        linkHref: "https://dianipetcare.vercel.app/",
+        stack: "NextJS - ExpressJs - NodeJs - PostgreSQL",
+        paragraph: "In development | Website and booking platform for dog training, pet walking, boarding, and grooming, with payment integration. ",
     },
     // {
     //     imgSrc: "/avyra.png",

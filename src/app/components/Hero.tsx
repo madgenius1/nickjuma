@@ -66,7 +66,7 @@ export default function Hero() {
                 <div className="lg:w-[40%] w-full flex flex-col items-center justify-center">
                     <div className="flex items-center justify-center px-4">
                         <Image
-                            src="/avatar.png"
+                            src="/nickjavatar.png"
                             alt="avatar"
                             width={500}
                             height={500}

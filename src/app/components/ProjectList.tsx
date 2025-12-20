@@ -53,14 +53,6 @@ const projects = [
         paragraph: "EdTech website and web app platform for AFEX Hub. The platform provides test prep and training for SAT tests. Integrates payment gateway and smart testing. ",
     },
     {
-        imgSrc: "/akeenahlogo.png",
-        imgAlt: "Akeenah Group",
-        title: "Akeenah Group Limited",
-        linkHref: "https://www.akeenahgroup.com/",
-        stack: "NextJS - TailwindCSS - PayloadCMS - MongoDB",
-        paragraph: "Company website for Akeenah Group. It is a leading African procurement and supplying company for industrial products. Incoporates multiple languages. ",
-    },
-    {
         imgSrc: "/dianipetcare.png",
         imgAlt: "Diani Pet Care",
         title: "Diani Pet Care",
